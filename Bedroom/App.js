@@ -5,6 +5,7 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useCallback } from 'react';
 
 export default function App() {
+
   const [fontsLoaded] = useFonts({
     regular: require("./assets/fonts/Poppins-Regular.ttf"),
     light: require("./assets/fonts/Poppins-Light.ttf"),
@@ -14,9 +15,20 @@ export default function App() {
     semibold: require("./assets/fonts/Poppins-SemiBold.ttf"),
   })
 
+  const onLayoutRootView = useCallback(async() => {
+
+    if(fontsLoaded){
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded] );
+
+  if (!fontsLoaded){
+    return null;
+  }
+
   return (
     <View style={styles.container}>
-      <Text> to start working on your app!</Text>
+      <Text style={styles.textStyle}> to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -29,4 +41,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  textStyle:{
+    fontFamily: "regular",
+    fontSize: 20,
+  }
 });
