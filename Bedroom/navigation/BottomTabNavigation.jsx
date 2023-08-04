@@ -23,20 +23,57 @@ const screenOptions = {
 const BottomTabNavigation = () => {
     return (
         <Tab.Navigation screenOptions={screenOptions}>
-            <Tab.Screens 
+            <Tab.Screen
                 name ="Home" 
-                components={Home}
+                component={Home}
                 options={{
                     tabBarIcon: ({focused}) => {
-                        return <Ionicon name={focused ? "home" : "home-outline"}  
-                        size={24}
-                        color={focused ? COLORS.primary : COLORS.gray2 }
-                        />
-                    }
+                        return (
+                            <Ionicon 
+                                name={focused ? "home" : "home-outline"}  
+                                size={24}
+                                color={focused ? COLORS.primary : COLORS.gray2 }
+                            />
+                        ); 
+                        
+                    },
                 }}
-                />
-            <Tab.Screens name ="Search" components={Search}/>
-            <Tab.Screens name ="Profile" components={Profile}/>
+            />
+
+            <Tab.Screen 
+                name ="Search" 
+                component={Search}
+                options={{
+                    tabBarIcon: ({focused}) => {
+                        return (
+                            <Ionicon 
+                                name={"search-sharp"}  
+                                size={24}
+                                color={focused ? COLORS.primary : COLORS.gray2 }
+                            />
+                        ); 
+                        
+                    },
+                }}
+            />
+
+            <Tab.Screen 
+                name ="Profile" 
+                component={Profile}
+                options={{
+                    tabBarIcon: ({focused}) => {
+                        return (
+                            <Ionicon 
+                                name={focused ? "person" : "person-outline"}  
+                                size={24}
+                                color={focused ? COLORS.primary : COLORS.gray2 }
+                            />
+                        ); 
+                        
+                    },
+                }}
+            />
+
         </Tab.Navigation> 
     )
 }
