@@ -2,6 +2,7 @@ import { View, Text } from 'react-native'
 import React from 'react'
 import { createBottomTabNavigation } from '@react-navigation/bottom-tabs';
 import { Ionicon } from "@expo/vector-icons"
+import { COLORS } from "../constants/index"
 
 const Tab = createBottomTabNavigation();
 
@@ -27,7 +28,10 @@ const BottomTabNavigation = () => {
                 components={Home}
                 options={{
                     tabBarIcon: ({focused}) => {
-                        return <></>
+                        return <Ionicon name={focused ? "home" : "home-outline"}  
+                        size={24}
+                        color={focused ? COLORS.primary : COLORS.gray2 }
+                        />
                     }
                 }}
                 />
