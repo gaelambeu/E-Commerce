@@ -5,10 +5,6 @@ import { Home, Profile, Search } from '../screens'; // Assuming you have these c
 import { Ionicons } from '@expo/vector-icons';
 import { COLORS } from '../constants/index';
 
-
-
-import Search from '../screens/Search';
-
 const Tab = createBottomTabNavigator();
 
 const screenOptions = {

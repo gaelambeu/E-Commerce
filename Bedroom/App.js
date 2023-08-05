@@ -1,10 +1,10 @@
-import React, { useCallback } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
+import React, { useCallback } from 'react';
 
 import BottomTabNavigation from './navigation/BottomTabNavigation'; // Import your BottomTabNavigation component
 
