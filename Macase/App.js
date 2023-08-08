@@ -6,12 +6,12 @@ import { useCallback } from 'react';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
-    'regular': require('./assets/fonts/Poppins-Regular'),
-    'light': require('./assets/fonts/Poppins-Light'),
-    'bold': require('./assets/fonts/Poppins-Bold'),
-    'medium': require('./assets/fonts/Poppins-Medium'),
-    'extrabold': require('./assets/fonts/Poppins-ExtraBold'),
-    'semibold': require('./assets/fonts/Poppins-SemiBold'),
+    regular: require("./assets/fonts/Poppins-Regular.ttf"),
+    light: require("./assets/fonts/Poppins-Light.ttf"),
+    bold: require("./assets/fonts/Poppins-Bold.ttf"),
+    medium: require("./assets/fonts/Poppins-Medium.ttf"),
+    extrabold: require("./assets/fonts/Poppins-ExtraBold.ttf"),
+    semibold: require("./assets/fonts/Poppins-SemiBold.ttf"),
   });
 
   const onLayoutRootView = useCallback(async () => {
@@ -28,7 +28,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text style={styles.textStyle}>to start working on your app!</Text>
       <StatusBar style="auto" />
     </View>
   );
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   textStyle: {
-    fontFamily: "extrabold",
-    fontSize: 20,
+    fontFamily: "regular",
+    fontSize: 16,
   }
 });
