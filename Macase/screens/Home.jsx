@@ -6,7 +6,10 @@ import styles from './home.style'
 const Home = () => {
   return (
     <SafeAreaView>
-      <Text style= {styles.textStyle}>Home</Text>
+      <Text style={styles.textStyle}>Home</Text>
+      <View style={styles.appBarWrapper}>
+
+      </View>
     </SafeAreaView>
   )
 }

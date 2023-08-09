@@ -5,6 +5,10 @@ const styles = StyleSheet.create({
     textStyle:{
         fontFamily: "bold",
         fontSize: 40,
+    },
+
+    appBarWrapper:{
+        fontSize:40
     }
 })
 
