@@ -8,7 +8,14 @@ const styles = StyleSheet.create({
     },
 
     appBarWrapper:{
-        fontSize:40
+        marginHorizontal: 22,
+        marginTop: SIZES.small,
+    },
+
+    appBar:{
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
     }
 })
 
