@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
     searchIcon: {
         marginHorizontal: 10,
         color: COLORS.gray,
+        marginTop: 3,
     },
     searchWrapper: {
         flex: 1,
