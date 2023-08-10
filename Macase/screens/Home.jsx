@@ -1,8 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { Ionicons, Fontisto } from '@expo/vector-icons';
 import styles from './home.style'
+import { Welcome } from '../components';
+
 
 const Home = () => {
   return (
@@ -17,11 +19,19 @@ const Home = () => {
               <View style={styles.cartCount}>
                 <Text style={styles.cartNumber}>0</Text>
               </View>
-              <Fontisto name='shopping-bag' size={24} />
+              <TouchableOpacity>
+                <Fontisto name='shopping-bag' size={24} />
+              </TouchableOpacity>
+              
             </View>
 
           </View>
         </View>
+
+
+        <ScrollView>
+          <Welcome />
+        </ScrollView>
     </SafeAreaView>
   )
 }
