@@ -9,7 +9,15 @@ const Home = () => {
     <SafeAreaView>
         <View style={styles.appBarWrapper}>
           <View style={styles.appBar}>
-          <Ionicons name='location-outline' size={24} />
+            <Ionicons name='location-outline' size={24} />
+
+            <Text style={styles.location}>Abidjan Côte d'Ivoire</Text>
+
+            <View style={{ alignItems: "flex-end"}}>
+              <View style={styles.cartCount}>
+                <Text>0</Text>
+              </View>
+            </View>
           </View>
         </View>
     </SafeAreaView>

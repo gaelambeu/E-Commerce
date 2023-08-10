@@ -16,6 +16,24 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
+    },
+
+    location:{
+        fontFamily: "semibold",
+        fontSize:   SIZES.medium,
+        color: COLORS.gray
+    },
+
+    cartCount:{
+        position: "absolute",
+        bottom: 14,
+        widht: 16,
+        height: 16,
+        borderRadius: 8,
+        alignItems: "center",
+        backgroundColor: "green",
+        justifyContent: "center",
+        zIndex: 999,
     }
 })
 
