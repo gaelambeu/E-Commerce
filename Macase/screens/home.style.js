@@ -34,6 +34,13 @@ const styles = StyleSheet.create({
         backgroundColor: "green",
         justifyContent: "center",
         zIndex: 999,
+    },
+
+    cartNumber:{
+        fontFamily: "regular",
+        fontWeight: "600",
+        fontSize: 10,
+        color: COLORS.lightWhite
     }
 })
 

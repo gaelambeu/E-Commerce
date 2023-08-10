@@ -15,7 +15,7 @@ const Home = () => {
 
             <View style={{ alignItems: "flex-end"}}>
               <View style={styles.cartCount}>
-                <Text>0</Text>
+                <Text style={styles.cartNumber}>0</Text>
               </View>
             </View>
           </View>
