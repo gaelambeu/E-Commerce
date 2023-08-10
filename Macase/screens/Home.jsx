@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons, Fontisto } from '@expo/vector-icons';
 import styles from './home.style'
 
 const Home = () => {
@@ -17,7 +17,9 @@ const Home = () => {
               <View style={styles.cartCount}>
                 <Text style={styles.cartNumber}>0</Text>
               </View>
+              <Fontisto name='shopping-bag' size={24} />
             </View>
+
           </View>
         </View>
     </SafeAreaView>
