@@ -3,15 +3,15 @@ import { COLORS, SIZES } from "../../constants/index";
 
 const styles = StyleSheet.create({
     container:{
-        width: 182,
+        width: 130,
         height: 240,
-        marginEnd: 22,
+        marginEnd: 20,
         borderRadius: SIZES.medium,
         backgroundColor: COLORS.secondary
     }, 
     imageContainer: {
         flex: 1,
-        width: 170,
+        width: 117,
         marginLeft: SIZES.small/2,
         marginTop: SIZES.small/2,
         borderRadius: SIZES.small,
