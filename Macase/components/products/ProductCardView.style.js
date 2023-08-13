@@ -15,7 +15,14 @@ const styles = StyleSheet.create({
         marginLeft: SIZES.small/2,
         marginTop: SIZES.small/2,
         borderRadius: SIZES.small,
-        overflow: "hidden",
+        overflow: "hidden",  
+    },
+    image: {
+        aspectRatio: 1,
+        resizeMode: 'cover'
+    },
+    details: {
+        padding: SIZES.small
     }
 })
 
