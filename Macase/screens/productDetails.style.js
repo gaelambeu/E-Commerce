@@ -14,7 +14,22 @@ const styles = StyleSheet.create({
         top: SIZES.xxLarge,
         width: SIZES.width -44,
         zIndex: 999
+    },
+    image:{
+        aspectRatio: 1,
+        resizeMode: "cover"
+    },
+    details: {
+        marginTop: -SIZES.large,
+        backgroundColor: COLORS.lightWhite,
+        width: SIZES.width,
+        borderTopLeftRadius: SIZES.medium,
+        borderTopRightRadius: SIZES.medium,
+    }, 
+    titleRow: {
+        
     }
+
 })
 
 export default styles

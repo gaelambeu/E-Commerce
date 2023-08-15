@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { Image, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import styles from './productDetails.style'
 import { Ionicons } from '@expo/vector-icons'
@@ -16,9 +16,17 @@ const ProductDetails = ({navigation}) => {
           <Ionicons name="heart" size={30} color={COLORS.primary} />
         </TouchableOpacity>
       </View>
+
       <Image 
       source={{uri: "https://i.pinimg.com/564x/88/b9/82/88b9820cb6ddbeaf55ff56c08033cc8f.jpg"}}
+      style={styles.image}
       />
+
+      <View style={styles.details}>
+        <View style={styles.titleRow}>
+          
+        </View>
+      </View>
 
     </View>
   )
