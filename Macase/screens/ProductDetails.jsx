@@ -22,9 +22,14 @@ const ProductDetails = ({navigation}) => {
       style={styles.image}
       />
 
+
       <View style={styles.details}>
         <View style={styles.titleRow}>
-          
+          <Text style={styles.title}>Product</Text>
+
+          <View>
+            
+          </View>
         </View>
       </View>
 

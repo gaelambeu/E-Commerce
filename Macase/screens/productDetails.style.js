@@ -4,6 +4,7 @@ import {COLORS, SIZES} from '../constants/index'
 const styles = StyleSheet.create({
     container: {
         flex: 1, 
+        backgroundColor: COLORS.lightWhite
     },
     upperRow: {
         marginHorizontal: 20,
@@ -27,7 +28,17 @@ const styles = StyleSheet.create({
         borderTopRightRadius: SIZES.medium,
     }, 
     titleRow: {
-        
+        marginHorizontal: 20,
+        paddingBottom: SIZES.small,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        width: SIZES.width -44,
+        top: 20
+    }, 
+    title:{
+        fontFamily: "bold",
+        fontSize: SIZES.large
     }
 
 })
