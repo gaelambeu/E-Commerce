@@ -37,9 +37,16 @@ const ProductDetails = ({navigation}) => {
 
         <View style={styles.ratingRow}>
           <View style={styles.rating}>
-            {[1,2,3,4,5].map((index) => {
-              <Ionicons />
-            })}
+            {[1,2,3,4,5].map((index) => (
+              <Ionicons 
+              key={index}
+              name="star"
+              size={24}
+              color="gold"
+              />
+            ))}
+
+            <Text style={styles.ratingText}> (4.9)</Text>
           </View>
         </View>
 

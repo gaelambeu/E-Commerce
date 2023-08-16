@@ -49,8 +49,14 @@ const styles = StyleSheet.create({
     rating:{
         top: SIZES.large,
         flexDirection: "row",
-        justifyContent: "center",
+        justifyContent: "flex-start",
+        alignItems: "center",
         marginHorizontal: SIZES.large
+    },
+
+    ratingText:{
+        color: COLORS.gray,
+        fontFamily: "medium"
     },
 
     title:{
