@@ -4,7 +4,7 @@ import {COLORS, SIZES} from '../constants/index'
 const styles = StyleSheet.create({
     container: {
         flex: 1, 
-        backgroundColor: COLORS.lightWhite
+        backgroundColor: COLORS.gray
     },
     upperRow: {
         marginHorizontal: 20,
@@ -17,16 +17,29 @@ const styles = StyleSheet.create({
         zIndex: 999
     },
     image:{
-        aspectRatio: 1,
-        resizeMode: "cover"
+        aspectRatio: 1.3,
+        resizeMode:"cover"
     },
     details: {
-        marginTop: -SIZES.large,
+        marginTop: -SIZES.xLarge,
         backgroundColor: COLORS.lightWhite,
         width: SIZES.width,
         borderTopLeftRadius: SIZES.medium,
         borderTopRightRadius: SIZES.medium,
     }, 
+
+    cartRow:{
+        paddingBottom: SIZES.small,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        width: SIZES.width -44,
+    },
+
+    cartBtn:{
+
+    },
+
     titleRow: {
         marginHorizontal: 20,
         paddingBottom: SIZES.small,
@@ -56,7 +69,8 @@ const styles = StyleSheet.create({
 
     ratingText:{
         color: COLORS.gray,
-        fontFamily: "medium"
+        fontFamily: "medium",
+        paddingHorizontal: SIZES.small,
     },
 
     descriptionWrapper:{
@@ -81,6 +95,7 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems: "center",
         backgroundColor: COLORS.secondary,
+        marginHorizontal: 12,
         padding: 5,
         borderRadius: SIZES.large
     },

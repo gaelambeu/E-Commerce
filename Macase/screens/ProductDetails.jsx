@@ -1,7 +1,7 @@
 import { Image, Text, TouchableOpacity, View } from 'react-native'
 import React, {useState} from 'react'
 import styles from './productDetails.style'
-import { Ionicons, SimpleLineIcons } from '@expo/vector-icons'
+import { Ionicons, MaterialCommunityIcons, SimpleLineIcons } from '@expo/vector-icons'
 import {COLORS, SIZES} from '../constants/index' 
 
 const ProductDetails = ({navigation}) => {
@@ -73,7 +73,7 @@ const ProductDetails = ({navigation}) => {
                 />
             </TouchableOpacity>
 
-            <Text style={styles.ratingText}>   {count}   </Text>
+            <Text style={styles.ratingText}>{count}</Text>
 
             <TouchableOpacity onPress={() => decrement()}>
                 <SimpleLineIcons 
@@ -93,11 +93,24 @@ const ProductDetails = ({navigation}) => {
 
         <View style={{marginBottom: SIZES.small}}>
           <View style={styles.location}>
-            <Ionicons 
-                name="location-outline"
-                size={20}
-            />
+
+            <View style={{flexDirection: "row"}}>
+              <Ionicons name="location-outline" size={20} />
+              <Text>Abidjan(Port-Bouet) </Text>
+            </View>
+
+            <View style={{flexDirection: "row"}}>
+              <MaterialCommunityIcons name="truck-delivery-outline" size={20} />
+              <Text> Livraison gratuite</Text>
+            </View>
+
           </View>
+        </View>
+
+        <View style={styles.cartRow}>
+          <TouchableOpacity onPress={() => {}} style={styles.cartBtn}>
+              <Text></Text>
+          </TouchableOpacity>
         </View>
 
       </View>
