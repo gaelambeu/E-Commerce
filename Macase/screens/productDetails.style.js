@@ -59,6 +59,32 @@ const styles = StyleSheet.create({
         fontFamily: "medium"
     },
 
+    descriptionWrapper:{
+        marginTop: SIZES.large*2,
+        marginHorizontal: SIZES.large
+    },
+
+    description: {
+        fontFamily: "medium",
+        fontSize: SIZES.large -2
+    },
+
+    descText: {
+        fontFamily: "regular",
+        fontSize: SIZES.small,
+        textAlign: "justify",
+        marginBottom: SIZES.small
+    },
+
+    location:{
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        backgroundColor: COLORS.secondary,
+        padding: 5,
+        borderRadius: SIZES.large
+    },
+
     title:{
         fontFamily: "bold",
         fontSize: SIZES.large

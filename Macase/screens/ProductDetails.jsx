@@ -84,6 +84,22 @@ const ProductDetails = ({navigation}) => {
           </View>
         </View>
 
+
+        <View style={styles.descriptionWrapper}>
+          <Text style={styles.description}>Description</Text>
+          <Text style={styles.descText}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit maxime sunt tempora officia veritatis iure est aut, cum sit doloremque aliquam inventore. Ullam laborum fugiat molestias, vero cupiditate dolore debitis. </Text>
+        </View>
+
+
+        <View style={{marginBottom: SIZES.small}}>
+          <View style={styles.location}>
+            <Ionicons 
+                name="location-outline"
+                size={20}
+            />
+          </View>
+        </View>
+
       </View>
 
     </View>
