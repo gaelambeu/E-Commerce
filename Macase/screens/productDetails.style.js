@@ -37,7 +37,11 @@ const styles = StyleSheet.create({
     },
 
     cartBtn:{
-
+        width: SIZES.width*0.7,
+        backgroundColor: COLORS.black,
+        padding: 8,
+        borderRadius: SIZES.large,
+        marginLeft: 12
     },
 
     titleRow: {
@@ -100,6 +104,12 @@ const styles = StyleSheet.create({
         borderRadius: SIZES.large
     },
 
+    cartTitle:{
+        fontFamily: "semibold",
+        fontSize: SIZES.medium,
+        color:COLORS.lightWhite
+    },
+
     title:{
         fontFamily: "bold",
         fontSize: SIZES.large
@@ -112,6 +122,16 @@ const styles = StyleSheet.create({
         paddingHorizontal: 10,
         fontFamily: "semibold",
         fontSize: SIZES.large
+    },
+
+    addCart:{
+        width: 37,
+        height: 37,
+        borderRadius: 50,
+        margin: SIZES.small,
+        backgroundColor: COLORS.black,
+        alignItems: "center",
+        justifyContent: "center"
     },
 
 })

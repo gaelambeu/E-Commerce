@@ -1,7 +1,7 @@
 import { Image, Text, TouchableOpacity, View } from 'react-native'
 import React, {useState} from 'react'
 import styles from './productDetails.style'
-import { Ionicons, MaterialCommunityIcons, SimpleLineIcons } from '@expo/vector-icons'
+import { Fontisto, Ionicons, MaterialCommunityIcons, SimpleLineIcons } from '@expo/vector-icons'
 import {COLORS, SIZES} from '../constants/index' 
 
 const ProductDetails = ({navigation}) => {
@@ -109,7 +109,11 @@ const ProductDetails = ({navigation}) => {
 
         <View style={styles.cartRow}>
           <TouchableOpacity onPress={() => {}} style={styles.cartBtn}>
-              <Text></Text>
+              <Text style={styles.cartTitle}>ACHETER MAINTENANT</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity onPress={() => {}} style={styles.addCart}>
+              <Fontisto name="shopping-bag" size={22} color={COLORS.lightWhite} />
           </TouchableOpacity>
         </View>
 
