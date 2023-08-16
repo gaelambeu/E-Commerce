@@ -33,13 +33,13 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        width: SIZES.width -44,
+        width: SIZES.width ,
     },
 
     cartBtn:{
         width: SIZES.width*0.7,
         backgroundColor: COLORS.black,
-        padding: 8,
+        padding: SIZES.small/2,
         borderRadius: SIZES.large,
         marginLeft: 12
     },
@@ -105,6 +105,7 @@ const styles = StyleSheet.create({
     },
 
     cartTitle:{
+        marginLeft: SIZES.small,
         fontFamily: "semibold",
         fontSize: SIZES.medium,
         color:COLORS.lightWhite
