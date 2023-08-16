@@ -1,10 +1,24 @@
 import { Image, Text, TouchableOpacity, View } from 'react-native'
-import React from 'react'
+import React, {useState} from 'react'
 import styles from './productDetails.style'
-import { Ionicons } from '@expo/vector-icons'
+import { Ionicons, SimpleLineIcons } from '@expo/vector-icons'
 import {COLORS, SIZES} from '../constants/index' 
 
 const ProductDetails = ({navigation}) => {
+
+  const [count, setCount ] = useState(1);
+
+
+  const increment = () => {
+    setCount(count + 1)
+  }
+
+  const decrement = () => {
+    if (count >1 ){
+      setCount(count - 1)
+    }
+  }
+
   return (
     <View style={styles.container}>
       <View style={styles.upperRow}>
@@ -37,7 +51,7 @@ const ProductDetails = ({navigation}) => {
 
         <View style={styles.ratingRow}>
           <View style={styles.rating}>
-            {[1,2,3,4,5].map((index) => (
+            {[1,2,3,4,5].map((index) => (   
               <Ionicons 
               key={index}
               name="star"
@@ -47,6 +61,26 @@ const ProductDetails = ({navigation}) => {
             ))}
 
             <Text style={styles.ratingText}> (4.9)</Text>
+          </View>
+
+
+
+          <View style={styles.rating}>
+            <TouchableOpacity onPress={() => increment()}>
+                <SimpleLineIcons 
+                name="plus"
+                size={20}
+                />
+            </TouchableOpacity>
+
+            <Text style={styles.ratingText}>   {count}   </Text>
+
+            <TouchableOpacity onPress={() => decrement()}>
+                <SimpleLineIcons 
+                name="minus"
+                size={20}
+                />
+            </TouchableOpacity>
           </View>
         </View>
 
