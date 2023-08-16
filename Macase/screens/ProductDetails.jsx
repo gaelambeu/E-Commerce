@@ -24,13 +24,25 @@ const ProductDetails = ({navigation}) => {
 
 
       <View style={styles.details}>
+
+
         <View style={styles.titleRow}>
           <Text style={styles.title}>Product</Text>
 
-          <View>
-            
+          <View style={styles.priceWrapper}>
+            <Text style={styles.price}>78 000 F CFA</Text>
           </View>
         </View>
+
+
+        <View style={styles.ratingRow}>
+          <View style={styles.rating}>
+            {[1,2,3,4,5].map((index) => {
+              <Ionicons />
+            })}
+          </View>
+        </View>
+
       </View>
 
     </View>

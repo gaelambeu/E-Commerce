@@ -36,10 +36,36 @@ const styles = StyleSheet.create({
         width: SIZES.width -44,
         top: 20
     }, 
+
+    ratingRow:{
+        paddingBottom: SIZES.small,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+        width: SIZES.width -10,
+        top: 5
+    },
+
+    rating:{
+        top: SIZES.large,
+        flexDirection: "row",
+        justifyContent: "center",
+        marginHorizontal: SIZES.large
+    },
+
     title:{
         fontFamily: "bold",
         fontSize: SIZES.large
-    }
+    },
+    priceWrapper: {
+        backgroundColor: COLORS.secondary,
+        borderRadius: SIZES.large
+    },
+    price:{
+        paddingHorizontal: 10,
+        fontFamily: "semibold",
+        fontSize: SIZES.large
+    },
 
 })
 
