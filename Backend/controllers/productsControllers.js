@@ -13,9 +13,10 @@ module.exports = {
 
     getAllProduct: async(req, res) => {
         try {
-            
+            const products = await Product.find().sort({ createdAt: -1})
+            res.status(200).json(products)
         } catch (error) {
-            
+            res.status(500).json("failed to get the products")
         }
     },
 }
