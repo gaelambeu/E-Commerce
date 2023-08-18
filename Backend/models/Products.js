@@ -8,4 +8,4 @@ const ProductSchema = new mongoose.Schema({
     product_location: {type: String, require: true},
 }, {timestamps: true});
 
-module.export = module.model("Product", ProductSchema)
+module.export = mongoose.model("Product", ProductSchema)
