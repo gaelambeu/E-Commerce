@@ -1,6 +1,7 @@
 <FlatList 
-        data={products}
-        renderItem={({item}) => (<Text>Product</Text>)}
+        data={data}
+        keyExtractor={(item) => item._id}
+        renderItem={({item}) => <ProductCardView />}
         horizontal
         contentContainerStyle={{columnGap:  SIZES.medium}}
 />

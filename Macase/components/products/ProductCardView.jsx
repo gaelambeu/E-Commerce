@@ -6,7 +6,7 @@ import { COLORS } from '../../constants'
 import { useNavigation } from '@react-navigation/native'
 
 
-const ProductCardView = () => {
+const ProductCardView = ({item}) => {
     const navigation = useNavigation();
 
   return (
