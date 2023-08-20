@@ -10,19 +10,27 @@ const ProductCardView = ({item}) => {
     const navigation = useNavigation();
 
   return (
-    <TouchableOpacity onPress={() => navigation.navigate("ProductDetails")}>
+    <TouchableOpacity onPress={() => navigation.navigate("ProductDetails", {item})}>
         <View style={styles.container}> 
             <View style={styles.imageContainer}>
                 <Image 
-                    source={{uri:"https://i.pinimg.com/564x/88/b9/82/88b9820cb6ddbeaf55ff56c08033cc8f.jpg"}}
+                    source={{uri:item.imageUrl}}
                     style={styles.image}
                 />
             </View>
 
             <View style={styles.details}>
-                <Text style={styles.title} numberOfLines={1}>Product hjjjjaaaaaaaaaaaaaaaaanjzioazniojnjanjonzajonioaznio</Text>
-                <Text style={styles.supplier} numberOfLines={1}>Product</Text>
-                <Text style={styles.price}>125000 F CFA</Text>
+                <Text style={styles.title} numberOfLines={1}>
+                    {item.title}
+                </Text>
+
+                <Text style={styles.supplier} numberOfLines={1}>
+                    {item.supplier}
+                </Text>
+
+                <Text style={styles.price}>
+                    {item.price}
+                </Text>
             </View>
 
             <TouchableOpacity style={styles.addBtn}>

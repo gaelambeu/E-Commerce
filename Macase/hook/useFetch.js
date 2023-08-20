@@ -3,8 +3,8 @@ import {useState, useEffect} from 'react'
 import axios from 'axios'
 
 const useFetch = () => {
-    const [data, setData] = useEffect([]);
-    const [isLoading, setIsLoading] = useEffect(false);
+    const [data, setData] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
 
 
@@ -19,7 +19,7 @@ const useFetch = () => {
             setError(error)
         } finally {
           setIsLoading(false)
-        }
+      }
     }
 
 
