@@ -4,9 +4,11 @@ import styles from './ProductCardView.style'
 import { Ionicons } from '@expo/vector-icons'
 import { COLORS } from '../../constants'
 import { useNavigation } from '@react-navigation/native'
+import ProductRow from './ProductRow'
 
 
-const ProductCardView = ({}) => {
+
+const ProductCardView = ({item}) => {
     const navigation = useNavigation();
 
   return (
@@ -14,7 +16,7 @@ const ProductCardView = ({}) => {
         <View style={styles.container}> 
             <View style={styles.imageContainer}>
                 <Image 
-                    source={{uri:item.imageUrl}}
+                    source={{uri: item.imageUrl}}
                     style={styles.image}
                 />
             </View>
@@ -29,7 +31,7 @@ const ProductCardView = ({}) => {
                 </Text>
 
                 <Text style={styles.price}>
-                    {item.price}
+                    {item.price} F CFA
                 </Text>
             </View>
 
