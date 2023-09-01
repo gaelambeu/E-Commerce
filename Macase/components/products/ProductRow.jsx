@@ -7,25 +7,20 @@ import useFetch from "../../hook/useFetch"
 
 
 const ProductRow = () => {
-  const {data, isLoading, error} = useFetch()
+  const products = [1, 2, 3, 4];
 
   
 
   return (
     <View style={styles.container}>
-        {isLoading ? (
-          <ActivityIndicator size={SIZES.xxLarge} color={COLORS.primary}/>
-        ): error ? (
-          <Text>Quelques choses ses mal passées</Text>
-        ):(
+        
           <FlatList
-            data={data}
-            keyExtractor={(item) => item._id }
-            renderItem={({ item }) => <ProductCardView item={item}/>}
+            data={products}
+            renderItem={({ item }) => <ProductCardView/>}
             horizontal
             contentContainerStyle={{ columnGap: SIZES.medium }}
           />
-        )}
+  
     </View>
   );
 };

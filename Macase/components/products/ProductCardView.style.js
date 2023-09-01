@@ -26,23 +26,23 @@ const styles = StyleSheet.create({
     },
     title: {
         fontFamily: "bold",
-        fontSize: SIZES.large,
+        fontSize: SIZES.small,
         marginBottom: 2
     },
     supplier: {
         fontFamily: "regular",
-        fontSize: SIZES.small,
+        fontSize: SIZES.xSmall,
         color: COLORS.gray    
     },
     price: {
         fontFamily: "bold",
-        fontSize: SIZES.medium,
+        fontSize: SIZES.small,
         
     },
     addBtn:{
         position: 'absolute',
-        bottom: SIZES.xSmall,
-        right: SIZES.xSmall
+        bottom: 5,
+        right: 1
     }
 })
 

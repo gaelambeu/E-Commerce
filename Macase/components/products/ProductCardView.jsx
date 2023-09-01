@@ -8,30 +8,30 @@ import ProductRow from './ProductRow'
 
 
 
-const ProductCardView = ({item}) => {
+const ProductCardView = () => {
     const navigation = useNavigation();
 
   return (
-    <TouchableOpacity onPress={() => navigation.navigate("ProductDetails", {item})}>
+    <TouchableOpacity onPress={() => navigation.navigate("ProductDetails", )}>
         <View style={styles.container}> 
             <View style={styles.imageContainer}>
                 <Image 
-                    source={{uri: item.imageUrl}}
+                    source={{uri: "https://i.pinimg.com/236x/83/16/19/831619a3f9cfb9c28f9552366805b77c.jpg"}}
                     style={styles.image}
                 />
             </View>
 
             <View style={styles.details}>
                 <Text style={styles.title} numberOfLines={1}>
-                    {item.title}
+                    product
                 </Text>
 
                 <Text style={styles.supplier} numberOfLines={1}>
-                    {item.supplier}
+                    product
                 </Text>
 
                 <Text style={styles.price}>
-                    {item.price} F CFA
+                   product F CFA
                 </Text>
             </View>
 
