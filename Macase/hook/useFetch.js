@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native'
-import {useState, useEffect} from 'react'
-import axios from 'axios'
+import {useState, useEffect, refetch} from 'react'
+import axios from 'axios';
 
 const useFetch = () => {
   const [data, setData] = useState([]);
@@ -21,7 +21,6 @@ const useFetch = () => {
     } finally{
         setIsLoading(false)
     } 
-
   }
   
   useEffect(() => {

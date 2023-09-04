@@ -4,34 +4,32 @@ import styles from './ProductCardView.style'
 import { Ionicons } from '@expo/vector-icons'
 import { COLORS } from '../../constants'
 import { useNavigation } from '@react-navigation/native'
-import ProductRow from './ProductRow'
 
 
-
-const ProductCardView = () => {
+const ProductCardView = ({item}) => {
     const navigation = useNavigation();
 
   return (
-    <TouchableOpacity onPress={() => navigation.navigate("ProductDetails", )}>
+    <TouchableOpacity onPress={() => navigation.navigate("ProductDetails", {item})}>
         <View style={styles.container}> 
             <View style={styles.imageContainer}>
                 <Image 
-                    source={{uri: "https://i.pinimg.com/236x/83/16/19/831619a3f9cfb9c28f9552366805b77c.jpg"}}
+                    source={{uri: item.imageUrl}}
                     style={styles.image}
                 />
             </View>
 
             <View style={styles.details}>
                 <Text style={styles.title} numberOfLines={1}>
-                    product
+                    {item.title}
                 </Text>
 
                 <Text style={styles.supplier} numberOfLines={1}>
-                    product
+                    {item.supplier}
                 </Text>
 
                 <Text style={styles.price}>
-                   product F CFA
+                    {item.price}
                 </Text>
             </View>
 

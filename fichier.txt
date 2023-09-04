@@ -7,10 +7,3 @@
 />
 
 
-<FlatList
-            data={data}
-            keyExtractor={(item) => item._id}
-            renderItem={({ item }) => <ProductCardView/>}
-            horizontal
-            contentContainerStyle={{ columnGap: SIZES.medium }}
-          />
