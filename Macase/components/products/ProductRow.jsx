@@ -11,14 +11,14 @@ const ProductRow = () => {
   return (
     <View style={styles.container}>
       {isLoading ? (
-        <ActivityIndicator size={SIZES.small} color={COLORS.primary} />
+        <ActivityIndicator size={SIZES.large} color={COLORS.primary} />
       ) : error ? (
-        <Text>Nothing found crashed</Text>
+        <Text>Something went wrong</Text>
       ) : (
         <FlatList
           data={data}
           keyExtractor={(item) => item._id}
-          renderItem={(item) => <ProductCardView item={item} />} 
+          renderItem={({item}) => <ProductCardView item={item} />} 
           horizontal
           contentContainerStyle={{ paddingHorizontal: SIZES.medium }} 
         />
